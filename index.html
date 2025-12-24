@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>clicker game</title>
+        <link rel="stylesheet" href="Untitled-1.css">
+    </head>
+    <body>
+
+        <script>
+            i=0
+            a=1
+            b=0
+            delay=1000
+            var body = document.getElementsByTagName('body')[0];
+            var newDiv = document.createElement('div');
+            newDiv.innerHTML = i;
+            body.appendChild(newDiv);
+            function doSomething() {
+                i=i+b
+                var heading = document.querySelector('div');
+                heading.textContent =i;
+            }
+        setInterval(doSomething,delay)
+        </script>
+        <button class="red-button", onclick="
+        i=i+a
+        
+        var heading = document.querySelector('div');
+        
+        heading.textContent =i;
+        ">click me</button>
+        <button onclick="
+        if (i>=100){
+            i=i-100
+            a++
+            var heading = document.querySelector('div');
+            heading.textContent =i;
+        }
+            
+        ", class="button1">update click power</button>
+        
+        <b>update cost</b>
+        <amogus>100</amogus>
+        <p></p>
+        <button onclick="
+        if (i>=200){
+            i=i-200
+            b++
+            var heading = document.querySelector('div');
+            heading.textContent =i;
+        }
+        
+        ", class="button2">update autoclicker power</button>
+        <p></p>
+        <button onclick="
+        if (i>=1000000){
+            i=i-1000000
+            a=a+100000
+            var heading = document.querySelector('div');
+            heading.textContent =i;
+        }
+        ", class="button3">SUPER ULTRA COOL BUTTON</button>
+    </body>
+</html>
